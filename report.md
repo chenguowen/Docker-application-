@@ -1,3 +1,28 @@
+打开特定的docker ： 
+当前路径为workspace   
+nvidia-docker run -it -v `pwd`:/workspace f9d8  
+exit退出 
+
+
+保存docker
+sudo docker save -o guowen  6afbf 
+
+
+docker save 可以保存特定文件
+nvidia-docker run -it -v `pwd`:/workspace c22edcc
+
+保存docker
+docker commit 7106e0 
+
+标记docker   
+docker tag c22ed    guowen 
+
+查看目前的docker: 
+docker images   
+
+
+*********************************************************
+
 https://www.nvidia.cn/object/docker-container-cn.html 
 清华的tuna真是神器： 如何安装上docker-ce  
 https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/  
